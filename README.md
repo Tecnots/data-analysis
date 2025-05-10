@@ -1,12 +1,14 @@
 #  Data Analysis
 
-This reads a dataset from database and perform  some data analysis 
+This project connects to a MySQL database, reads data using SQLAlchemy, and performs data parsing and analysis such as date transformations and calculating differences.
 
 
 
 ## Configuration setup
 
-Create a **.env** file and add database credentials in the below format 
+To securely connect to your MySQL database, create a `.env` file in the project root and add your database credentials in the following format:
+
+```env 
 
 DB_USER='dbusername'
 DB_PASSWORD='dbpassword'
