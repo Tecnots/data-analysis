@@ -4,7 +4,7 @@ import pandas as pd
 
 
 def main():
-    df = pd.read_sql("select * sales_transactions",engine)
+    df = pd.read_sql("select * FROM sales_transactions",engine)
     df['date'] =  pd.to_datetime(df['date'],errors='coerce')
     print(df['date'])
     
@@ -14,5 +14,5 @@ def main():
 
 
 
-if '__name__' == "__main__":
+if __name__ == "__main__":
     main()
